@@ -1,0 +1,578 @@
+/* 轮播图 */
+.banner{
+
+  /* height: 500px; */
+  background-color: #f5f5f5;
+
+}
+.banner .wrapper{
+  height: 500px;
+  position: relative;
+}
+.banner .wrapper .aside{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 251px;
+  height: 500px;
+  background-color: rgba(0,0,0,.8);
+}
+.banner .aside li{
+  width: 251px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+
+}
+.banner .aside li a{
+  display: block;
+  padding:0 19px 0 36px;
+  color:#fff;
+  position: relative;
+
+}
+.banner .aside li a:hover{
+  color:#fff;
+  background-color: #27ba9b;
+}
+.banner .aside li a span{
+  font-size: 14px;
+  margin-left:15px;
+
+}
+.banner .aside li a .sprites{
+  /* display: inline-block;
+   */
+  position: absolute;
+  top:19px;
+  right:19px;
+
+  width: 6px;
+  height: 12px;
+  /* background-color: pink; */
+  background-image: url(../images/sprites.png);
+  background-position: -80px -108px;
+
+
+}
+/* 箭头 */
+.banner .prev a,
+.banner .next a{
+    position: absolute;
+    top:228px;
+    width: 45px;
+    height: 44px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+  }
+
+  .banner .prev a{
+  left:260px;
+  background-position: 13px -60px;
+}
+
+.banner .next a{
+  right:10px;
+  background-position: -24px -58px;
+
+}
+/* 小圆点 */
+.banner ol{
+  position: absolute;
+  left:680px;
+  bottom:31px;
+}
+.banner ol li{
+  float:left;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(225, 225, 225, .5);
+  border-radius: 50%;
+  margin:0 9px;
+
+}
+/* 当前选中current */
+.banner ol li.current{
+  background-color:orange;
+}
+
+/* 新鲜好物 newGods */
+.goods{
+  margin-top:48px;
+  width: 1243px;
+  height: 471px;
+  /* background-color: pink; */
+}
+.goods .hd{
+  width: 1241px;
+  height: 29px;
+  margin-bottom:37px;
+}
+.goods .hd h2{
+  line-height: 29px;;
+  font-size: 29px;
+  color:#333;
+  font-weight:400;
+}
+.goods .hd h2 span{
+  font-size: 16px;
+  color: #999999;
+  margin-left:34px;
+}
+.goods .hd a{
+  margin:11px 20px 0  0;
+  font-size: 16px;
+  color:#999;
+  position: relative;
+}
+.goods .hd a::after{
+  position: absolute;
+  top:4px;
+  right:-13px;
+  margin-left:13px;
+  content:'';
+  width: 7px;
+  height: 13px;
+  /* background-color: red; */
+  background-image: url(../images/sprites.png);
+  background-position: 0 -108px;
+
+}
+.goods .bd li{
+  float:left;
+  width: 304px;
+  height: 405px;
+  background-color:  #f0f9f4;
+  margin-right:8px;
+
+}
+.goods .bd li:nth-child(4n){
+  margin-right:0;
+
+}
+/* 当实际图片尺寸过大,只要设置图片的宽度,高会自动等比例缩放 */
+.goods .bd img{
+  width: 304px;
+  /* height: 305px; */
+
+}
+.goods .bd .content{
+  height: 57px;
+  margin:22px auto 21px;
+  text-align: center;
+
+}
+
+.goods .bd .content .product{
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color:#333;
+
+}
+
+.goods .bd .content .price{
+  height: 19px;
+  line-height: 19px;
+
+  margin-top:18px;
+  font-size: 23px;
+  color:#9a2e1f;
+}
+
+/* 人气爆款 popular pop */
+.popular{
+  width: 1245px;
+  /* height: 473px; */
+  /* background-color: pink; */
+  margin-top:47px;
+}
+.popular .hd h2,
+.popular .hd h2 span{
+  margin-left:34px;
+  margin-bottom:40px;
+  font-weight: 400;
+
+}
+
+.popular .hd h2{
+  height: 28px;
+  line-height: 28px;
+  font-size: 29px;
+  color:#333;
+
+}
+.popular .hd h2 span{
+  font-size: 16px;
+  line-height: 16px;
+  color:#999;
+}
+.popular .bd li{
+  float:left;
+  width: 304px;
+  height: 405px;
+  /* background-color: skyblue; */
+  margin-right:8px;
+}
+.popular .bd li:nth-child(4n){
+  margin-right:0;
+
+}
+.popular .bd img{
+  width: 304px;
+
+}
+.popular .content{
+  height: 55px;
+  margin:22px auto 23px;
+  text-align: center;
+}
+.popular .content .product{
+  height: 21px;
+  line-height: 21px;
+  font-size: 21px;
+  color:#333;
+  /* background-color: #fff; */
+
+}
+.popular .content .intorduce{
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  color:#999;
+  margin-top:18px;
+  /* background-color: #fff; */
+
+}
+/* 热门品牌 top brand  */
+.top-brand{
+ margin-top:55px;
+ background-color: #f5f5f5;
+}
+.top-brand .wrapper{
+  width: 1246px;
+  padding:42px 0 43px;
+  /* height: 390px; */
+  /* background-color: pink; */
+  position: relative;
+
+}
+.top-brand .hd h2{
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    font-size: 29px;
+    font-weight: 400;
+    color:#333;
+
+}
+.top-brand .hd h2 span{
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color:#999;
+  margin-left:35px;
+}
+
+/* 箭头 */
+.top-brand .hd .arrow{
+  position: absolute;
+  top:79px;
+  right: 0;
+  width: 52px;
+  height: 20px;
+  /* background-color: pink; */
+
+}
+.top-brand .hd .arrow .fl,
+.top-brand .hd .arrow .fr{
+  width: 20px;
+  height: 20px;
+  background-color:  #e2e2e2;
+  background-image: url(../images/sprites.png);
+}
+.top-brand .hd .arrow .fl{
+  margin-right:12px;
+  background-position:4px -71px;
+}
+.top-brand .hd .arrow .fr{
+  background-position: -36px -71px;
+
+}
+.top-brand .hd .arrow .fl:hover,
+.top-brand .hd .arrow .fr:hover{
+  background-color:  #27ba9b;
+}
+.top-brand .bd li{
+  float:left;
+  width: 244px;
+  height: 306px;
+  padding:4px 1px 7px 0;
+  margin-right:5px;
+
+}
+.top-brand .bd li:nth-child(5n){
+  padding:4px 0 7px 1px;
+  margin-right:0;
+
+}
+.top-brand .bd img{
+  width: 244px;
+}
+/* 生鲜 fresh , 服饰 ,  餐厨区域 kitchen ,
+  居家区域home*/
+.fresh,
+.clothes,
+.kitchen,
+.home{
+ width: 1240px;
+ padding:34px 0 42px;
+
+}
+
+.fresh .hd h2,
+.clothes .hd h2,
+.kitchen .hd h2,
+.home .hd h2{
+  height: 28px;
+  line-height: 28px;
+  font-size: 29px;
+  font-weight: 400;
+  color:#333;
+
+}
+.fresh .look,
+.clothes .look,
+.kitchen .look,
+.home .look{
+  margin:9px 0 0 76px;
+  padding-right: 22px;
+  font-size: 16px;
+  color:#999;
+  position: relative;
+}
+.fresh .hd li,
+.clothes .hd li,
+.kitchen .hd li,
+.home .hd li{
+  float:left;
+  height: 16px;
+  line-height: 16px;;
+  font-size: 16px;
+  color:#333;
+  padding:2px 7px;
+  margin: 8px 6px 0 0;
+}
+.fresh  .hd .fr li:hover,
+.clothes  .hd .fr li:hover,
+.kitchen .hd .fr li:hover,
+.home .hd .fr li:hover{
+  background-color: #27ba9b;
+}
+
+.fresh .look::after,
+.clothes .look::after,
+.kitchen .look::after,
+.home .look::after,
+.topic .hd .look::after{
+  content:'';
+  width: 7px;
+  height: 13px;
+  /* background-color: blue; */
+  position: absolute;
+  top: 6px;
+  right:0;
+  background-image: url(../images/sprites.png);
+  background-position: 0 -110px;
+
+}
+.fresh .bd,
+.clothes  .bd,
+.kitchen .bd,
+.home .bd{
+  margin-top:34px ;
+}
+.fresh .bd img,
+.clothes  .bd img,
+.kitchen .bd img,
+.home .bd img{
+  float:left;
+  width: 240px;
+  height: 617px;
+  padding:5px 1px 2px;
+  box-sizing: border-box;
+
+}
+.fresh .bd li,
+.clothes  .bd li,
+.kitchen .bd li,
+.home .bd li{
+  float: left;
+  box-sizing: border-box;
+  width: 242px;
+  height: 304px;
+  /* background-color: yellow; */
+  margin:0 0 3px 8px;
+  position: relative;
+}
+.fresh .bd li  img,
+.clothes .bd li  img,
+.kitchen .bd li img,
+.home .bd li img{
+  width: 184px;
+  height: 184px;
+  background-color: #fff;
+  margin:8px 29px 6px;
+}
+
+.fresh .bd li .intorduce,
+.clothes  .bd li .intorduce,
+.kitchen .bd li .intorduce,
+.home .bd li .intorduce{
+  margin-left:29px;
+  margin-bottom:15px;
+  height: 87px;
+
+  font-size: 16px;
+  color:#333;
+  font-stretch: normal;
+  letter-spacing: 0px;
+}
+.fresh .bd li p:last-child,
+.clothes  .bd li p:last-child,
+.kitchen .bd li p:last-child,
+.home .bd li p:last-child{
+      font-size: 22px;
+      color:#9a2e1f;
+}
+ .current{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 242px;
+  height: 304px;
+  border: 1px solid #27ba9b;
+  display: none;
+
+}
+.current .box{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 242px;
+  height: 84px;
+  background-color: #27ba9b;
+}
+.current .box li{
+  width: 125px;
+  height: 42px;
+  line-height: 42px;;
+  text-align: center;
+  margin-left:54px;
+}
+.current .box li:first-child{
+  border-bottom: 2px solid #a9dbcc;
+
+}
+.current .box li:first-child a{
+  font-size: 18px;
+  color:#fff;
+}
+.current .box li:last-child a{
+  font-size: 13px;
+  color:#fff;
+}
+
+.fresh .bd li:hover .current,
+.clothes  .bd li:hover .current,
+.kitchen .bd li:hover .current,
+.home .bd li:hover .current{
+  display: block;
+}
+/* 最新专题topic */
+.new-topic{
+  background-color: #f5f5f5;
+  height: 500px;
+ }
+ .new-topic .topic {
+   width: 1240px;
+   position: relative;
+
+ }
+ .topic .hd h2{
+  height: 28px;
+  line-height: 28px;
+  padding: 44px 0 27px;
+  font-size: 29px;
+  font-weight: 400;
+  font-stretch: normal;
+	letter-spacing: 0px;
+ }
+ .topic .hd .look{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 13px;
+    font-size: 16px;
+}
+.topic .bd li{
+  float:left;
+  width: 405px;
+  height: 357px;
+  background-color: #fff;
+  margin-right:12px;
+}
+.topic .bd li:nth-child(3n){
+  margin-right:0;
+}
+.topic .bd li img{
+  width: 404px;
+  height: 288px;
+  padding:1px;
+
+}
+.topic .bd li button{
+  background-color: #fff;
+  margin-top:27px;
+  padding-left:20px;
+  font-size: 14px;
+  color:#333;
+  position: relative;
+}
+.topic .bd li button::after{
+  position: absolute;
+  top:4px;
+  left:2px;
+  content:'';
+  width: 16px;
+  height: 16px;
+  /* background-color: blue; */
+  background-image:url(../images/sprites.png);
+}
+.topic .bd .heart::after{
+  background-position: -120px -110px;
+  color:red;
+}
+.topic .bd .eye::after{
+  background-position: -160px -110px;
+}
+.topic .bd .text::after{
+  background-position: -200px -110px;
+
+}
+
+.topic .bd .heart{
+  margin-left:34px;
+}
+.topic .bd .eye{
+  margin-left:40px;
+}
+.topic .bd .text{
+  margin-right:18px;
+}
+.topic .bd .active::after{
+  background-position: -240px -110px;
+}
