@@ -251,6 +251,7 @@ margin-bottom:10px;
 .collect .contain ul{
   display: flex;
   justify-content: space-between;
+  width: 925px;
 }
 .collect li{
   width:175px;
