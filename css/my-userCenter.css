@@ -1,0 +1,205 @@
+/* 内容主体  */
+.xtx_body{
+  padding:30px 0 85px;
+  background-color: #f6f6f6;
+
+}
+.xtx_body .wrapper{
+  display: flex;
+}
+/*侧边栏  */
+.xtx_body .aside{
+  width: 227px;
+  min-height: 500px;
+  margin-right:18px;
+  background-color: pink;
+}
+/*侧边栏 */
+/*右侧主体内容  */
+/* 用户账户预览 */
+
+.xtx_body .tbody{
+  flex: 1;
+  min-height: 500px;
+  /* background-color: skyblue; */
+}
+
+.overview{
+  display: flex;
+  width: 999px;
+  height: 132px;
+  background-color: #fff;
+  padding:20px 0;
+  margin-bottom: 16px;
+}
+.overview div{
+  flex:1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+.overview div:first-child{
+  border-right:1px solid #f4f4f4;
+}
+.overview div img{
+  display: inline;
+  width: 25px;
+  height: 23px;
+
+}
+.overview div a:last-child img{
+  width: 18px;
+  height: 25px;
+
+}
+.overview div span{
+  font-size: 25px;
+  color:#e05e30;
+}
+/* 用户账户预览 */
+/* 公共样式 */
+.pannel{
+  margin-bottom:20px;
+  padding:28px 17px 28px 19px ;
+  background-color: #fff;
+
+}
+.pannel .pannel_title{
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  border-bottom: 1px solide #f4f4f4;
+}
+.pannel .pannel_title h4{
+  font-size: 22PX;
+  font-weight: 400;
+  color:#333;
+}
+.pannel .pannel_title a{
+  font-size: 16px;
+  margin-right:10px;
+  margin-top:8px;
+}
+/* 订单 */
+.orders li{
+  width: 964px;
+  height: 137px;
+  border:1px solid #f4f4f4;
+
+}
+.orders li:first-child {
+  margin-bottom: 21px;
+}
+.orders li{
+  display: flex;
+
+}
+
+.orders li .goods{
+  flex:1;
+  padding: 17px 0 14px 12px;
+  margin-right:125px;
+}
+.orders li .status{
+  width: 125px;
+}
+.orders li .price{
+  width: 200px;
+  border-left:1px solid #f4f4f4;
+  border-right:1px solid #f4f4f4;
+}
+.orders li .info{
+  width: 180px;
+}
+.orders .goods{
+  display: flex;
+  align-items: center;
+}
+.orders .goods img{
+  width: 107px;
+}
+.orders .goods .txt{
+  flex:1;
+  width: 0;
+}
+.orders .goods h4{
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+.orders  .status{
+ align-self: center;
+ font-size: 14px;
+ color: #e05e30;
+}
+.orders .price,
+.orders .info{
+  align-self:center;
+  text-align: center;
+  font-size: 14px;
+}
+.orders .price p:first-child{
+  color:#9a2e1f;
+}
+.orders .info p:first-child a{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  margin-bottom:10px;
+  line-height: 30px;
+  background-color: #5eb69c;
+  border-radius:2px;
+  color:#fff;
+}
+/* 订单 */
+/* 收藏商品 */
+.collect .contain {
+  padding: 9px 8px 0 12px;
+}
+.collect .contain ul{
+  display: flex;
+  justify-content: space-between;
+}
+.collect li{
+  width:175px;
+}
+.collect li:nth-child(2){
+  width: 181px;
+  padding-left: 18px;
+  position: relative;
+}
+.collect li:nth-child(2)::after{
+  content:'6折';
+  display: inline-block;
+  width: 28px;
+  height: 51px;
+  color: #5eb69c;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  border:1px solid  #5eb69c;
+  border-radius:3px;
+  position: absolute;
+  top:0;
+  left:0;
+
+}
+.collect li img{
+  width: 160px;
+  margin-bottom:23px;
+}
+.collect li .info{
+  font-size: 16px;
+  color:#333;
+  margin-bottom:5px;
+}
+.collect li .price{
+  font-size: 22px;
+  color:#9a2e1f;
+}
+/* 收藏商品 */
+/*右侧主体内容  */
+/* 内容主体  */

@@ -58,7 +58,7 @@
 .header{
     /* background-color: pink; */
     margin:82px auto 30px;
-
+    background-color: #fff;
 }
 .header .logo{
   width: 207px;
